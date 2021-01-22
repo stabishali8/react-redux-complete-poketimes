@@ -1,4 +1,5 @@
-const Contact = () => {
+const Contact = (props) => {
+    console.log("props",props);
     return(
         <div className="container">
             <h4 className="center">Contact</h4>

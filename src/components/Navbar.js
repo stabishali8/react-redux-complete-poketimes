@@ -1,6 +1,8 @@
 import React from 'react';
+import { Link, NavLink, withRouter } from 'react-router-dom';
 
-const Navbar = () =>{
+const Navbar = (props) =>{
+    console.log("props: ",props)
     return(
         <nav className="nav-warapper red darken-3">
             <div className="container">
@@ -15,4 +17,4 @@ const Navbar = () =>{
     )
 }
 
-export default Navbar;
+export default withRouter(Navbar);
